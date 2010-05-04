@@ -1,0 +1,71 @@
+/* $Id: nice_menus_default.css,v 1.6 2007/10/29 16:38:28 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  To help understand the CSS, the HTML looks like this, where
+    x is a number;
+    TYPE is down/left/right;
+    PATH is the menu path such as node/343;
+    MID is the menu id such as 33):
+  <ul id='nice-menu-x' class='nice-menu nice-menu-TYPE'>
+    <li id='menu-MID' class='menu-path-PATH'><a href='#'>This is a menu item</a></li>
+    <li class='menuparent menu-path-PATH'><a href='#'>A submenu</a>
+      <ul...><li...>...</li>
+      </ul>
+    </li>
+    ...
+  </ul>
+
+  If you have more than one nice-menu and want to target a particular one,
+  use its id (e.g. ul#nice-menu-2).
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for some CSS customization examples.
+*/
+
+/*******************************
+FSC Header Menu   *************/
+
+ul#nice-menu-1, ul#nice-menu-1 li, ul#nice-menu-1 li ul, ul#nice-menu-1 li ul li, ul#nice-menu-1 a {margin:0;padding:0;}
+
+ul#nice-menu-1 {float:right;width:538px;margin-right:40px;}
+ul#nice-menu-1 li {display:inline;float:left;}
+ul#nice-menu-1 li a {text-indent:-9999px;display:block;height:40px;background-image:url(../i/global/navbar.png);background-repeat:no-repeat;}
+
+	/*off-states*/
+	#menu-261 a {width:70px;background-position:0 0;}
+	#menu-262 a {width:142px;background-position:-70px 0;}
+	#menu-263 a {width:73px;background-position:-212px 0;}
+	#menu-264 a {width:110px;background-position:-285px 0;}
+	#menu-265 a {width:143px;background-position:-395px 0;}
+	/*hover*/
+	#menu-261 a:hover {background-position: 0 -40px;}
+	#menu-262 a:hover {background-position: -70px -40px;}
+	#menu-263 a:hover {background-position: -212px -40px;}
+	#menu-264 a:hover {background-position: -285px -40px;}
+	#menu-265 a:hover {background-position: -395px -40px;}
+	/*on-states*/
+	body#about #navabout a {background-position: 0 -80px;}
+	body#using #navusing a {background-position: -70px -80px;}
+	body#events #navevents a {background-position: -212px -80px;}
+	body#collections #navcollections a {background-position: -285px -80px;}
+	body#resources #navresources a {background-position: -395px -80px;}
+	/* DROPDOWN */
+	#header-blocks li ul {display:none;width:154px;position:absolute;padding:6px 0;background:#333;}
+	#header-blocks li ul li a {display:block;width:128px;height:auto;text-indent:0;color:#f2f2f2;font-size:.97em;text-decoration:none!important;padding:6px 13px;background:#333;}
+	#header-blocks li ul li a:hover {text-decoration:underline!important;}
+	#header-blocks li:hover ul {display:block;}
+	/*hovering within the nested UL keeps first-level nav item active*/
+	li#menu-261:hover a {background-position:0 -40px;}
+	li#menu-262:hover a {background-position:-70px -40px;}
+	li#menu-263:hover a {background-position:-212px -40px;}
+	li#menu-264:hover a {background-position:-285px -40px;}
+	li#menu-265:hover a {background-position:-395px -40px;}
+	/*disallow dropdowns within sections*/
+	body#about li#navabout ul, body#using li#navusing ul, body#events li#navevents ul, body#collections li#navcollections ul, body#resources li#navresources ul 	{display:none!important;}
+	
+ul#nice-menu-1 li ul li ul {display:none !important;}

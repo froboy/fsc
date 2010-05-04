@@ -1,0 +1,175 @@
+/* RESET
+   ============================= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+
+/* GLOBAL SETTINGS
+   ============================= */
+
+body {background:#ccc;color:#2d2d2d;font:12px helvetica,arial,sans-serif;} 
+#container {width:960px;margin:0 auto;background:#fff;}
+
+#masthead {background:url(/webservices/internal/fsc/site/i/global/masthead/01.jpg) no-repeat 0 0;height:181px;}/* randomizer: http://sonspring.com/journal/easy-random-css-backgrounds */
+#masthead h1 {text-indent:-9999px;width:200px;height:142px;margin-left:40px;background:url(/webservices/internal/fsc/site/i/global/logo.png) no-repeat 0 0;}
+#masthead h1 a {display:block;width:200px;height:142px;}
+
+/*-- NAVIGATION SYSTEMS --*/
+/* global */
+#navbar {height:40px;margin-top:-40px;background:url(/webservices/internal/fsc/site/i/global/bg_navbar.png) repeat-x 0 0;}
+#navbar ul {float:right;width:538px;margin-right:40px;}
+#navbar ul li {display:inline;float:left;}
+#navbar ul li a {text-indent:-9999px;display:block;height:40px;background-image:url(/webservices/internal/fsc/site/i/global/navbar.png);background-repeat:no-repeat;}
+	/*off-states*/
+	#navabout a {width:70px;background-position:0 0;}
+	#navusing a {width:142px;background-position:-70px 0;}
+	#navevents a {width:73px;background-position:-212px 0;}
+	#navcollections a {width:110px;background-position:-285px 0;}
+	#navresources a {width:143px;background-position:-395px 0;}
+	/*hover*/
+	#navabout a:hover {background-position: 0 -40px;}
+	#navusing a:hover {background-position: -70px -40px;}
+	#navevents a:hover {background-position: -212px -40px;}
+	#navcollections a:hover {background-position: -285px -40px;}
+	#navresources a:hover {background-position: -395px -40px;}
+	/*on-states*/
+	body#about #navabout a {background-position: 0 -80px;}
+	body#using #navusing a {background-position: -70px -80px;}
+	body#events #navevents a {background-position: -212px -80px;}
+	body#collections #navcollections a {background-position: -285px -80px;}
+	body#resources #navresources a {background-position: -395px -80px;}
+	/* DROPDOWN */
+	#navbar li ul {display:none;width:154px;position:absolute;padding:6px 0;background:#333;}
+	#navbar li ul li a {display:block;width:128px;height:auto;text-indent:0;color:#f2f2f2;font-size:.97em;text-decoration:none!important;padding:6px 13px;background:#333;}
+	#navbar li ul li a:hover {text-decoration:underline!important;}
+	#navbar li:hover ul {display:block;}
+	/*hovering within the nested UL keeps first-level nav item active*/
+	li#navabout:hover a {background-position:0 -40px;}
+	li#navusing:hover a {background-position:-70px -40px;}
+	li#navevents:hover a {background-position:-212px -40px;}
+	li#navcollections:hover a {background-position:-285px -40px;}
+	li#navresources:hover a {background-position:-395px -40px;}
+	/*disallow dropdowns within sections*/
+	body#about li#navabout ul, body#using li#navusing ul, body#events li#navevents ul, body#collections li#navcollections ul, body#resources li#navresources ul 	{display:none!important;}
+/* subnav */
+dl.subnav {margin:5px 0 40px 0;border-bottom:1px solid #bfd6da;}
+dl.subnav dt {border-top:1px solid #bfd6da;}
+dl.subnav dt a {display:block;width:200px;padding:13px 0 13px 0;text-transform:uppercase;}
+/* third-level nav */
+dl.subnav dd {background:url(/webservices/internal/fsc/site/i/global/bullet.gif) no-repeat 0 3px;border:none;}
+dl.subnav dd a {display:block;width:187px;margin-left:13px;text-transform:none;padding:0 0 16px 0;}
+/*------------------------*/
+
+#wrapper {width:880px;padding:0 40px;}
+#wrapper h2 {margin:0 0 0 240px;font-size:1.9em;padding:35px 0 25px 0;color:#749e6b;font-weight:normal;text-transform:uppercase;}
+#wrapper h3 {margin: 0 0 1em 0;font-size:1.4em;line-height:1.4em;font-weight:normal;}
+#wrapper h4 {margin: 0 0 1em 0;line-height:1.5em;font-weight:normal;color:#737373;font-size:1.2em;}
+#wrapper p {line-height:1.8em;margin:0 0 1.6em 0;}
+#wrapper table {line-height:1.8em;margin:0 0 1.6em 0;}
+#wrapper a {color:#005c6a;text-decoration:none;}
+#wrapper a:hover {text-decoration:underline;}
+#wrapper img.right {float:right;margin:0 0 10px 10px;}
+#wrapper img.left {float:left;margin:0 10px 10px 0;}
+
+/*-- GENERAL MODULE STYLES --*/
+.module {width:200px;border-bottom:1px solid #dce7da;margin-bottom:30px;}
+.module p {line-height:1.3em!important;color:#737373;}
+.module h3 {text-indent:-9999px;margin:0!important;padding:0 0 1em;height:14px;width:200px;background-position:0 0;background-repeat:no-repeat;}
+.catalog h3 {background-image:url(/webservices/internal/fsc/site/i/global/h3_catalog.gif);}
+.news h3 {background-image:url(/webservices/internal/fsc/site/i/global/h3_news.gif);}
+.mailinglist h3 {background-image:url(/webservices/internal/fsc/site/i/global/h3_mailinglist.gif);}
+.contact h3 {background-image:url(/webservices/internal/fsc/site/i/global/h3_contact.gif);}
+.contact table tr td {width:110px;}
+.module ul li, .module ol li {line-height:1.3em!important;margin-bottom:.6em!important;}
+.module ul li {background-position:0 .4em!important;}
+.photo p {font-size:.97em;padding:10px 0;margin:0!important;}
+/*---------------------------*/
+
+/*-- COLUMN SYSTEMS --*/
+/* col1 */
+#col1 {width:200px;margin:0 40px 0 0;float:left;}
+/* col2 */
+#col2 {width:640px;float:left;}
+.narrow {width:400px!important;margin:0 40px 0 0;} /* apply to #col2 and use with #col3 */
+#col2 ol, #col2 ul {margin:0 0 1.6em 0;line-height:1.6em;}
+#col2 ol {list-style-type:decimal;margin-left:20px;}
+#col2 ol li, #col2 ul li {margin-bottom:.8em;}
+#col2 ul li {padding:0 13px;background:url(/webservices/internal/fsc/site/i/global/bullet.gif) no-repeat 0 .5em;}
+/* nested column */
+#col2 #col3 {width:200px;margin-left:40px;float:right;} /* wrapping content: third column nested in #col2 */
+/* col3 */
+#col3 {margin:0;float:left;} /* three exclusive columns: use with #col2.narrow */
+/*-------------------*/
+
+#clearfoot {clear:both;height:1px;}
+#footer {height:85px;width:880px;padding:20px 0 0;margin:20px auto 0;border-top:1px solid #dcdcdc;color:#737373;}
+#footer ul {line-height:1.5em;font-size:.97em;float:left;}
+#footer a {color:#737373; text-decoration:underline;}
+#footer a:hover {text-decoration:none;}
+#footer #uchicago {text-indent:-9999px;display:block;width:201px;height:42px;float:right;background:url(/webservices/internal/fsc/site/i/global/uchicago.gif) no-repeat 0 0;}
+
+/*-- MISCELLANEOUS STYLES --*/
+p.intro {background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373;}
+/* mailing list */
+input#mailinglist {border:1px solid #acc5a6;border-right:none;padding:3px 3px 2px;height:14px;width:152px;color:#737373;font-size:.9em;margin-bottom:20px;}
+input#mailinglist_btn {vertical-align:top;}
+/*--------------------------*/
+
+
+/* HOMEPAGE SPECIFIC
+   ============================= */
+body#home #col1 {clear:left;}
+body#home #col2 {margin:0!important;}
+body#home #col3 {float:right!important;margin-top:40px;}
+
+body#home p.intro {width:600px;float:left!important;margin:40px 0!important;}
+body#home .module {margin-bottom:20px!important;}
+body#home .module p {color:#2d2d2d;}
+body#home .module table {line-height:1.5em;}
+.news p {line-height:1.8em!important;}
+.cms {background:url(/webservices/internal/fsc/site/i/global/cms/02.jpg) repeat-y 0 0;padding:15px 20px;width:160px!important;border-bottom:none;} /* randomizer: http://sonspring.com/journal/easy-random-css-backgrounds */
+.cms h3 {font-size:1.8em!important;padding-bottom:5px!important;text-indent:0!important;height:auto!important;width:auto!important;color:#d2eaee;}
+.cms p {color:#fff!important;margin-bottom:0!important;line-height:1.5em!important;}
+.cms a {color:#d2eaee!important;}
+
+/*--FEATURES --*/
+#feature {width:400px;float:left;}
+#feature #featnav {position:absolute;z-index:5;width:400px;height:38px;background:transparent;margin-top:214px;float:none!important;padding:0!important;}
+#feature #featnav ul {float:right;height:38px;background:url(/webservices/internal/fsc/site/i/global/bg_feature.png) repeat 0 0;}
+#feature #featnav ul li {float:left!important;padding:0;margin:0 0 0 1px;background:url(/webservices/internal/fsc/site/i/global/bg_featnav.png) repeat 0 0;display:block;}
+#feature #featnav ul li a {text-indent:-9999px;display:block;width:44px;height:38px;}
+#feature #featnav ul li#featnav1 a {background:transparent url(/webservices/internal/fsc/site/i/features/1/nav.png) no-repeat 0 0;}
+#feature #featnav ul li#featnav2 a {background:transparent url(/webservices/internal/fsc/site/i/features/2/nav.png) no-repeat 0 0;}
+#feature #featnav ul li#featnav3 a {background:transparent url(/webservices/internal/fsc/site/i/features/3/nav.png) no-repeat 0 0;}
+#feature #featnav ul li a:hover, #feature #featnav ul li a.activeSlide {background-color:#f9fafa!important;background-position:0 -39px!important;}
+#featcontainer {}
+#feature .slide {float:left;padding:252px 20px 10px;width:360px;background-color:#f9fafa;border-bottom:1px solid #e5e5e5;z-index:1;}
+#feature .slide h3 {color:#2d2d2d;font-size:1.5em!important;margin:-38px 0 0 -20px!important;height:30px;width:245px;padding:8px 0 0 20px;position:absolute;background:url(/webservices/internal/fsc/site/i/global/bg_feat_h3.png) repeat 0 0;font-weight:normal;text-transform:uppercase;}
+#feature .slide h4 {color:#2d2d2d;margin-bottom:1em!important;line-height:1.7em;font-size:1em;font-weight:bold;}
+#feature .slide h4 span {color:#737373;}
+#feature .slide p {margin-bottom:1em!important;}
+#feature .slide ol, #feature .slide ul {line-height:1em;}
+#feature .slide ul li {background-position: 0 .3em;}
+#feature div#feat1 {background:#f9fafa url(/webservices/internal/fsc/site/i/features/1/photo.jpg) no-repeat 0 0;}
+#feature div#feat2 {background:#f9fafa url(/webservices/internal/fsc/site/i/features/2/photo.jpg) no-repeat 0 0;}
+#feature div#feat3 {background:#f9fafa url(/webservices/internal/fsc/site/i/features/3/photo.jpg) no-repeat 0 0;}
+#feature div h4 {margin-top:20px;}
+/*-------------*/

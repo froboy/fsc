@@ -1,0 +1,14 @@
+#col2 ol {margin-left:25px;}
+.cms h3 {font-size:1.6em!important;}
+#feature .slide h4 {padding-top:20px;}
+input#mailinglist_btn {margin-top:1px;}
+/* png fixes */
+#navbar ul li a {background-image:url(/webservices/internal/fsc/site/i/global/navbar.gif);}
+#masthead h1, #navbar, #feature #featnav ul, #feature #featnav ul li, #feature .slide h3, #feature #featnav ul li#featnav1 a, #feature #featnav ul li#featnav2 a, #feature #featnav ul li#featnav3 a {behavior: url(/webservices/internal/fsc/site/js/iepngfix.htc)}
+/*ie_dropdown fix*/
+li#navabout.over a {background-position:0 -40px;}
+li#navusing.over a {background-position:-70px -40px;}
+li#navevents.over a {background-position:-212px -40px;}
+li#navcollections.over a {background-position:-285px -40px;}
+li#navresources.over a {background-position:-395px -40px;}
+#navbar li.over ul {display:block!important;}

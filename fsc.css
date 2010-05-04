@@ -1,0 +1,1353 @@
+/* $Id: zen.css,v 1.14.2.1 2009/02/13 07:46:04 johnalbin Exp $ */
+
+/*
+ * ZEN STYLES
+ *
+ * This is an example stylesheet. Sub-themes should NOT include the zen/zen.css
+ * file, but instead copy this CSS to their own stylesheets.
+ *
+ * In this stylesheet, we have included all of the classes and IDs from this
+ * theme's tpl.php files. We have also included many of the useful Drupal core
+ * styles to make it easier for theme developers to see them.
+ *
+ * Many of these styles are over-riding Drupal's core stylesheets, so if you
+ * remove a declaration from here, the styles may still not be what you want
+ * since Drupal's core stylesheets are still styling the element. See the
+ * drupal6-reference.css file for a list of all Drupal 5.x core styles.
+ *
+ * In addition to the style declarations in this file, other Drupal styles that
+ * you might want to override or augment are those for:
+ *
+ *   Book Navigation  See line 74  of Zen's drupal6-reference.css file
+ *   Forum            See line 197 of Zen's drupal6-reference.css file
+ *   Menus            See line 667 of Zen's drupal6-reference.css file
+ *   News Aggregator  See line 20  of Zen's drupal6-reference.css file
+ *   Polls            See line 287 of Zen's drupal6-reference.css file
+ *   Search           See line 320 of Zen's drupal6-reference.css file
+ *   User Profiles    See line 945 of Zen's drupal6-reference.css file
+ */
+
+
+/** body **/
+  body
+  {
+    margin: 0;
+    padding: 0 10px 10px 10px;
+    background:#ccc;
+    color:#2d2d2d;
+	font:12px helvetica,arial,sans-serif;
+
+  }
+
+  #page
+  {
+    background:#fff;
+  }
+
+  #page-inner
+  {
+  }
+  
+  a { outline:none; }
+
+/** header **/
+  #header
+  {
+  }
+
+  #header-inner
+  {
+  }
+  
+  #masthead {background:url(i/global/masthead/rotate.php) no-repeat 0 0;height:181px;}/* randomizer: http://sonspring.com/journal/easy-random-css-backgrounds */
+  .front #masthead {background:url(i/global/masthead/rotate.php?img=03.jpg) no-repeat 0 0;height:181px;}/* static for front */
+
+  #masthead h1 {text-indent:-9999px;width:200px;height:142px;margin-left:40px;margin-bottom:0;background:url(i/global/logo.png) no-repeat 0 0;}
+  #masthead h1 a {display:block;width:200px;height:142px;}
+
+  #header-blocks /* Wrapper for any blocks placed in the header region */
+  {
+  	height:40px;margin-top:-52px;background:url(i/global/bg_navbar.png) repeat-x 0 0;}
+  }
+
+
+/** main (container for everything else) **/
+  #main
+  {
+  }
+
+  #main-inner
+  {
+  }
+
+/** content **/
+
+#main h1 {line-height:1em;}
+#main h2 {margin: 0 0 1em 0;font-size:1.4em;line-height:1.4em;font-weight:normal;}
+#main h3 {margin: 0 0 1em 0;line-height:1.5em;font-weight:normal;color:#737373;font-size:1.2em;}
+#main p {line-height:1.8em;margin:0 0 1.6em 0;}
+#main table {line-height:1.8em;margin:0 0 1.6em 0;}
+#main th { border-bottom:1px solid #ccc; }
+#main a {color:#005c6a;text-decoration:none;}
+#main a:hover {text-decoration:underline;}
+img.right, div.imagecache-content_image {float:right;/*margin:0 0 10px 10px;*/}
+img.left {float:left;margin:0 10px 10px 0;}
+div.right {float:right;}
+div.left {flaot:left;}
+
+#content #col3 {width:200px;margin-left:40px;float:right;} /* wrapping content: third column nested in #col2 */
+
+/* subnav */
+#sidebar-left .block-menu_block {margin:5px 0 40px 0;border-bottom:1px solid #bfd6da;}
+#sidebar-left .block-menu_block ul {margin:0; padding:0;}
+#sidebar-left .block-menu_block li {border-top:1px solid #bfd6da; margin:0; list-style:none;}
+#sidebar-left .block-menu_block li a {display:block;width:200px;padding:13px 0 13px 0;text-transform:uppercase;}
+/* third-level nav */
+#sidebar-left .block-menu_block ul li ul li {background:url(i/global/bullet.gif) no-repeat 0 3px;border:none;}
+#sidebar-left .block-menu_block ul li ul li a {display:block;width:187px;margin-left:13px;text-transform:none;padding:0 0 16px 0;}
+
+/*-- GENERAL MODULE STYLES --*/
+#main .block-block {width:200px;border-bottom:1px solid #dce7da;margin-bottom:30px;}
+#main .block-block p {line-height:1.3em!important;color:#737373;}
+#main .block-block h2 {text-indent:-9999px;margin:0!important;padding:0 0 1em;height:14px;width:200px;background-position:0 0;background-repeat:no-repeat;}
+#main .block-block, #main .block-multiblock, #main .image-caption-container {width:200px;border-bottom:1px solid #dce7da;margin-bottom:30px;}
+#main .block-block p, #main .block-multiblock p, #main .block-views p, #main .image-caption {line-height:1.3em!important;color:#737373;}
+#main .block-block h2, #main .block-multiblock h2, #main .block-views h2 {text-indent:-9999px;margin:0!important;padding:0 0 1em;height:14px;width:200px;background-position:0 0;background-repeat:no-repeat;}
+#main .block-subject-search-the-catalog h2 {background-image:url(i/global/h3_catalog.gif);}
+#main .block-subject-search-the-catalog {background-color:#f7f8f8;border-top:1px solid #e2e2e3;padding:20px 10px;width:180px;}
+#main .block-subject-search-the-catalog p {margin:0;}
+#main .block-subject-events-mailing-list h2 {background-image:url(i/global/h3_mailinglist.gif);}
+#main .block-subject-hours-contact h2 {background-image:url(i/global/h3_contact.gif);}
+#main .block-subject-browse-the-events-archive h2 {background-image:url(i/global/h3_browse_events.gif);}
+#main .block-subject-search-the-events-archive h2 {background-image:url(i/global/h3_search_events.gif);}
+#main .block-subject-what-039-s-new h2 {background-image:url(i/global/h3_news.gif);}
+#main .block-subject-what-039-s-new img.imagefield-field_content_image {float:right; margin: 0 0 10px 10px;}
+#main .block-subject-what-039-s-new p {line-height:1.8em!important;}
+#main .block-subject-hours-contact table tr td {width:110px;}
+#main .module ul li, .module ol li {line-height:1.3em!important;margin-bottom:.6em!important;}
+#main .module ul li {background-position:0 .4em!important;}
+#main .photo p, #main div.image-caption {font-size:.97em;padding:10px 0;margin:0!important; clear:both;}
+
+#main .block-subject-cinema-amp-media-studies {background:url(i/global/cms/01.jpg) repeat-y 0 0;padding:15px 20px;width:160px!important;border-bottom:none;}
+#main .block-subject-cinema-amp-media-studies h2 {font-size:1.8em!important;padding-bottom:5px!important;text-indent:0!important;height:auto!important;width:auto!important;color:#d2eaee;}
+#main .block-subject-cinema-amp-media-studies p {color:#fff!important;margin-bottom:0!important;line-height:1.5em!important;}
+#main .block-subject-cinema-amp-media-studies a {color:#d2eaee!important;}
+
+#main .block-subject-browse-the-catalog h2 {background-image:url(i/global/h3_browse.gif);}
+
+#main .block-subject-events-disclaimer h2 {display:none;}
+#main .block-subject-events-disclaimer {background-color:#f7f8f8;border-top:1px solid #e2e2e3;padding:20px 10px;width:180px;}
+#main .block-subject-events-disclaimer p:last-child {margin:0;}
+
+#main .module {width:200px;border-bottom:1px solid #dce7da;margin-bottom:30px;}
+#main .module p {line-height:1.3em!important;color:#737373;}
+#main .module h3 {text-indent:-9999px;margin:0!important;padding:0 0 1em;height:14px;width:200px;background-position:0 0;background-repeat:no-repeat;}
+#main .catalog h3 {background-image:url(i/global/h3_catalog.gif);}
+#main .news h3 {background-image:url(i/global/h3_news.gif);}
+#main .browse h3 {background-image:url(i/global/h3_browse.gif);}
+#main .mailinglist h3 {background-image:url(i/global/h3_mailinglist.gif);}
+#main .contact h3 {background-image:url(i/global/h3_contact.gif);}
+#main .notes {margin-top:5px;}
+#main .notes h3 {background-image:url(i/global/h3_notes.gif);}
+#main .notes .filefield-file {margin-bottom:.8em;}
+
+div.block-subject-events-mailing-list fieldset{
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+}
+input#mailinglist {border:1px solid #acc5a6;border-right:none;padding:3px 3px 2px;height:14px;width:152px;color:#737373;font-size:.9em;margin-bottom:20px;}
+input#mailinglist_btn {vertical-align:top;}
+
+/* Right column embedded */
+fieldset.group-right{width:200px;margin:5px 0 30px 40px;padding:0;float:right;border:none;font-family:Helvetica,Arial,sans-serif;}
+fieldset.group-right div.field-field-related-links {border-bottom:1px solid #bfd6da; margin-bottom:30px;}
+fieldset.group-right div.field-field-related-links a {display:block;width:200px;padding:13px 0 13px 0;text-transform:uppercase;border-top:1px solid #bfd6da;}
+fieldset.group-right div.field-field-content-image p {font-size:.97em;padding:10px 0;margin:0!important; }
+fieldset.group-right div.image-caption-container {margin:0!important;}
+div.image-caption-container {margin:5px 0 30px 40px;}
+/* reset the styles on the edit page */
+.node-form fieldset.group-right{width:auto;margin:0;float:none;border:2px groove threedface;padding:0.5em;}
+
+#clearfoot {clear:both;height:1px;}
+
+/*--FEATURES --*/
+#feature {width:400px;float:left;}
+#feature #featnav {position:absolute;z-index:5;width:400px;height:38px;background:transparent;margin-top:214px;float:none!important;padding:0!important;}
+#feature #featnav ul {float:right;height:38px;background:url(i/global/bg_feature.png) repeat 0 0;}
+#feature #featnav ul li {float:left!important;padding:0;margin:0 0 0 1px;background:url(i/global/bg_featnav.png) repeat 0 0;display:block;}
+#feature #featnav ul li a {text-indent:-9999px;display:block;width:44px;height:38px;}
+#feature #featnav ul li#featnav1 a {background:transparent url(i/features/1/nav.png) no-repeat 0 0;}
+#feature #featnav ul li#featnav2 a {background:transparent url(i/features/2/nav.png) no-repeat 0 0;}
+#feature #featnav ul li#featnav3 a {background:transparent url(i/features/3/nav.png) no-repeat 0 0;}
+#feature #featnav ul li a:hover, #feature #featnav ul li a.activeSlide {background-color:#f9fafa!important;background-position:0 -39px!important;}
+#featcontainer {}
+#feature .slide {float:left;padding:252px 20px 10px;width:360px;background-color:#f9fafa;border-bottom:1px solid #e5e5e5;z-index:1;}
+#feature .slide h3 {color:#2d2d2d;font-size:1.5em!important;margin:-38px 0 0 -20px!important;height:30px;width:245px;padding:8px 0 0 20px;position:absolute;background:url(i/global/bg_feat_h3.png) repeat 0 0;font-weight:normal;text-transform:uppercase;}
+#feature .slide h4 {color:#2d2d2d;margin-bottom:1em!important;line-height:1.7em;font-size:1em;font-weight:bold;}
+#feature .slide h4 span {color:#737373;}
+#feature .slide p {margin-bottom:1em!important; line-height:1.8em!important;}
+#feature .slide ol, #feature .slide ul {line-height:1em;}
+#feature .slide ul li {background-position: 0 .3em;}
+/*#feature div#feat1 {background:#f9fafa url(/webservices/internal/fsc/site/i/features/1/photo.jpg) no-repeat 0 0;}
+#feature div#feat2 {background:#f9fafa url(/webservices/internal/fsc/site/i/features/2/photo.jpg) no-repeat 0 0;}
+#feature div#feat3 {background:#f9fafa url(/webservices/internal/fsc/site/i/features/3/photo.jpg) no-repeat 0 0;}*/
+#feature div#feat1, #feature div#feat2, #feature div#feat3 {background:#f9fafa no-repeat 0 0;}
+#feature div h4 {margin-top:20px;}
+/*-------------*/
+
+.date-nav {background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373; margin-bottom:10px;width:600px;}
+.date-nav h3 {margin-bottom:0!important;}
+img.imagecache-content_image {float:right; clear:right; }
+img.imagecache-teaser_image, img.imagefield-field_content_image {float:left; clear:left; margin: 0 10px 10px 0;}
+.view-event-browser .views-row {clear:both; overflow:auto;}
+.view-event-browser .node-type-event h3 {margin-bottom:0!important;}
+
+li.node_read_more {padding:0 !important;}
+
+/* Styles for event archive */
+.event_category {}
+.event_header {}
+.media_format {}
+.clearall {clear:both; border:none; border-top:1px solid #cccccc;}
+.content > #col3:first-child .photo {margin-bottom:5px;border-bottom:0px;}
+
+.node-teaser {border-bottom:1px solid #cdcdcd; padding: 10px 0; overflow:auto;}
+/*.node-teaser .content {margin-left:160px;}*/
+#main .node-teaser .content p {margin-bottom:0;}
+#main .content .event_date {line-height:1.8em;}
+#main .content .vocabulary {margin-top:-.4em;}
+body.node-type-event .vocabulary {width:400px; padding-right:0!important;}
+
+#main .vocabulary a {color:#2D2D2D;}
+#main .event_title {font-weight:bold; font-size:1.2em; margin-bottom:0;}
+#main .event_title_2 {margin-bottom:0; font-size:1.2em;}
+
+.block-subject-cinema-amp-media-studies .ext, .region-footer .ext {background:none!important;}
+
+
+/*---------------------------*/
+
+#content .content ol, #content .content ul {margin:0 0 1.6em 0; padding: 0;line-height:1.6em;list-style-image:none;list-style-position:outside;list-style-type:none;}
+#content .content ol {list-style-type:decimal;margin-left:20px;}
+#content .content ol li, #content .content ul li {margin-bottom:.8em;}
+#content .content ul li {padding:0 13px;background:url(i/global/bullet.gif) no-repeat 0 .5em;}
+
+  #content
+  {
+  }
+
+  #content-inner
+  {
+  }
+
+  #mission /* The mission statement of the site (displayed on homepage) */
+  {
+  	background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373;line-height:1.8em;
+  }
+
+  #content-top /* Wrapper for any blocks placed in the "content top" region */
+  {
+  }
+
+  #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
+  {
+  }
+
+  .breadcrumb /* The path to the current page in the form of a list of links */
+  {
+    padding-bottom: 0; /* Undo system.css */
+  }
+
+  h1.title, /* The title of the page */
+  h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+  h3.title /* Comment title */
+  {
+    margin: 0;
+  }
+  
+  h1.title
+  {
+  	margin:0;font-size:1.9em;padding:35px 0 25px 0;color:#749e6b;font-weight:normal;text-transform:uppercase;
+  }
+
+  div.messages /* Important messages (status, warning, and error) for the user */
+  {
+  background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373;
+  }
+  
+  div.field-field-intro { background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373;margin-bottom:1.6em;}
+  #main div.field-field-intro p {margin:0 0 1em 0;}
+  #main div.field-field-intro p:last-child {margin-bottom:0px;}
+
+  div.status /* Normal priority messages */
+  {
+  }
+
+  div.warning, tr.warning /* Medium priority messages */
+  {
+    /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+  }
+
+  div.error, tr.error /* High priority messages. See also the .error declaration below. */
+  {
+  }
+
+  div.tabs /* See also the tabs.css file. */
+  {
+  }
+
+  .help /* Help text on a page */
+  {
+    margin: 0 0 1em 0;
+  }
+
+  .more-help-link /* Link to more help */
+  {
+    font-size: 0.85em;
+    text-align: right;
+  }
+
+  #content-area /* Wrapper for the actual page content */
+  {
+  }
+
+  .pager /* A list of page numbers when more than 1 page of content is available */
+  {
+    clear: both;
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .pager a, .pager strong.pager-current
+  {
+    padding: 0.5em;
+  }
+
+  .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+  {
+    margin: 1em 0;
+  }
+
+  #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
+  {
+  }
+
+/** navbar **/
+  #navbar
+  {
+  }
+
+  #navbar-inner
+  {
+  }
+
+  #search-box /* Wrapper for the search form */
+  {
+  }
+
+  #edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
+  {
+    display: none;
+  }
+
+  #primary /* Primary links */
+  {
+  }
+
+  #secondary /* Secondary links */
+  {
+  }
+
+/** sidebar-left **/
+  #sidebar-left
+  {
+  }
+
+  #sidebar-left-inner
+  {
+  }
+
+/** sidebar-right **/
+  #sidebar-right
+  {
+  }
+
+  #sidebar-right-inner
+  {
+  }
+
+/** footer **/
+#footer {height:85px;width:880px;padding:20px 0 0;margin:20px auto 0;border-top:1px solid #dcdcdc;color:#737373;}
+#footer ul {margin:0;padding:0;list-style:none;line-height:1.5em;font-size:.97em;float:left;}
+#footer a {color:#737373; text-decoration:underline;}
+#footer a:hover {text-decoration:none;}
+#footer #uchicago {text-indent:-9999px;display:block;width:201px;height:42px;float:right;background:url(i/global/uchicago.gif) no-repeat 0 0;}
+
+  #footer-inner
+  {
+  }
+
+  #footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                     and for any blocks placed in the footer region */
+  {
+  }
+
+/** closure **/
+  #closure-blocks /* Wrapper for any blocks placed in the closure region */
+  {
+  }
+
+/** Drupal nodes **/
+  .node /* Node wrapper */
+  {
+  }
+
+  .node-inner /* Additional wrapper for node */
+  {
+  }
+
+  .sticky /* A sticky node (displayed before others in a list) */
+  {
+  }
+
+  .node-unpublished /* Unpublished nodes */
+  {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+  }
+
+  .node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+  .comment-unpublished div.unpublished
+  {
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+  .node-mine /* A node created by the current user */
+  {
+  }
+
+  .node-teaser /* A node displayed as teaser */
+  {
+  }
+
+  /* All nodes are given a node-type-FOO class that describes the type of
+   * content that it is. If you create a new content type called
+   * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+   */
+  .node-type-page /* Page content node */
+  {
+  }
+
+  .node-type-story /* Story content node */
+  {
+  }
+
+  .node h2.title /* Node title */
+  {
+  }
+
+  .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+  {
+    color: #c00;
+  }
+
+  .node .picture /* The picture of the node author */
+  {
+  }
+
+  .node.node-unpublished .picture,
+  .comment.comment-unpublished .picture
+  {
+    position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+  }
+
+  .node .meta /* Wrapper for submitted and terms data */
+  {
+  }
+
+  .node .submitted /* The "posted by" information */
+  {
+  }
+
+  .node .vocabulary
+  {
+	  display:inline-block;
+	  padding-right:1.5em;
+  }
+  
+  .node .terms /* Node terms (taxonomy) */
+  {
+	  float:none;
+  }
+  
+  #content .node .content .terms ul
+  {
+	  line-height:1.8em;
+  }
+  
+  #content .node .content .terms li
+  {
+	  padding-left:0!important;
+	  background:none;
+	  white-space:nowrap;
+  }
+
+  .node .content /* Node's content wrapper */
+  {
+  }
+
+  .node div.links /* Wrapper for node links */
+  {
+    margin: 1em 0;
+  }
+
+  ul.links /* Taxonomy links, node links, comment links */
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.links.inline
+  {
+    display: inline;
+  }
+
+  ul.links li
+  {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em;
+  }
+  
+  .terms-inline ul.links.inline li
+  {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em !important;
+	background:none !important;
+  }
+
+  .preview .node /* Preview of the content before submitting new or updated content */
+  {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+/** Drupal comments **/
+  #comments /* Wrapper for the list of comments and its title */
+  {
+    margin: 1em 0;
+  }
+
+  #comments-title /* Heading for the list of comments */
+  {
+  }
+
+  .comment /* Wrapper for a single comment */
+  {
+  }
+
+  .comment-inner /* Additional wrapper for a single comment */
+  {
+  }
+
+  .comment-preview /* Preview of the comment before submitting new or updated comment */
+  {
+  }
+
+  .comment.new /* A new comment since the user last viewed the page. */
+  {
+  }
+
+  .comment.odd /* An odd-numbered comment in the list of comments */
+  {
+  }
+
+  .comment.even /* An even-numbered comment in the list of comments */
+  {
+  }
+
+  .comment.first /* The first comment in the list of comments */
+  {
+  }
+
+  .comment.last /* The last comment in the list of comments */
+  {
+  }
+
+  .comment-unpublished /* Unpublished comments */
+  {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+  }
+
+  .comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+  {
+  }
+
+  .comment-published /* Published comments */
+  {
+  }
+
+  .comment-by-anon /* A comment created by an anonymous user */
+  {
+  }
+
+  .comment-by-author /* A comment created by the node's author */
+  {
+  }
+
+  .comment-mine /* A comment created by the current user */
+  {
+  }
+
+  .comment h3.title /* Comment title */
+  {
+  }
+
+  .new /* "New" marker for comments that are new for the current user */
+  {
+    color: #c00;
+  }
+
+  .comment .picture /* The picture of the comment author */
+  {
+  }
+
+  .comment .submitted /* The "posted by" information */
+  {
+  }
+
+  .comment .content /* Comment's content wrapper */
+  {
+  }
+
+  .comment .user-signature /* The user's signature */
+  {
+  }
+
+  .comment div.links /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
+  {
+    margin: 1em 0;
+  }
+
+  .indented /* Nested comments are indented */
+  {
+    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+  }
+
+  .preview .comment /* Preview of the comment before submitting new or updated comment */
+  {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+/** Drupal blocks **/
+  .block /* Block wrapper */
+  {
+    margin-bottom: 1em;
+  }
+
+  .block.region-odd /* Zebra striping for each block in the region */
+  {
+  }
+
+  .block.region-even /* Zebra striping for each block in the region */
+  {
+  }
+
+  .block.odd /* Zebra striping independent of each region */
+  {
+  }
+
+  .block.even /* Zebra striping independent of each region */
+  {
+  }
+
+  .region-count-1 /* Incremental count for each block in the region */
+  {
+  }
+
+  .count-1 /* Incremental count independent of each region */
+  {
+  }
+
+  .block-inner /* Additional wrapper for block */
+  {
+  }
+
+  .block h2.title /* Block title */
+  {
+  }
+
+  .block .content /* Block's content wrapper */
+  {
+  }
+
+  #block-aggregator-category-1 /* Block for the latest news items in the first category */
+  {
+  }
+
+  #block-aggregator-feed-1 /* Block for the latest news items in the first feed */
+  {
+  }
+
+  #block-block-1 /* First administrator-defined block */
+  {
+  }
+
+  #block-blog-0 /* "Recent blog posts" block */
+  {
+  }
+
+  #block-book-0 /* "Book navigation" block for the current book's table of contents */
+  {
+  }
+
+  #block-comments-0 /* "Recent comments" block */
+  {
+  }
+
+  #block-forum-0 /* "Active forum topics" block */
+  {
+  }
+
+  #block-forum-1 /* "New forum topics" block */
+  {
+  }
+
+  #block-menu-2 /* "Primary links" block */
+  {
+  }
+
+  #block-menu-secondary-links ul.menu /* "Secondary links" block */
+  {margin:5px 0 40px 0;border-bottom:1px solid #bfd6da;padding:0px;}
+  #block-menu-secondary-links ul.menu li {
+  	border-top:1px solid #bfd6da;
+  	list-style: none none; }
+  #block-menu-secondary-links ul.menu li a {display:block;width:200px;padding:13px 0 13px 0;text-transform:uppercase;}
+  #block-menu-secondary-links ul.menu li ul.menu {margin:0px; border: none;}
+  #block-menu-secondary-links ul.menu li ul.menu li {background:url(i/global/bullet.gif) no-repeat 0 3px;border:none;}
+  #block-menu-secondary-links ul.menu li ul.menu li a {display:block;width:187px;margin-left:13px;text-transform:none;padding:0 0 16px 0;}
+  
+  
+  #block-node-0 /* "Syndicate" block for primary RSS feed */
+  {
+  }
+
+  #block-poll-0 /* "Most recent poll" block */
+  {
+  }
+
+  #block-profile-0 /* "Author information" block for the profile of the page's author */
+  {
+  }
+
+  #block-search-0 /* "Search form" block */
+  {
+  }
+
+  #block-statistics-0 /* "Popular content" block */
+  {
+  }
+
+  #block-user-0 /* "User login form" block */
+  {
+  }
+
+  #block-user-1 /* "Navigation" block for Drupal navigation menu */
+  {
+  }
+
+  #block-user-2 /* "Who's new" block for a list of the newest users */
+  {
+  }
+
+  #block-user-3 /* "Who's online" block for a list of the online users */
+  {
+  }
+
+/** Drupal boxes **/
+  /* Wrapper for Comment form, Comment viewing options, Menu admin, and
+   * Search results.
+   */
+  .box /* Wrapper for box */
+  {
+  }
+
+  .box-inner /* Additional wrapper for box */
+  {
+  }
+
+  .box h2.title /* Box title */
+  {
+  }
+
+  .box .content /* Box's content wrapper */
+  {
+  }
+
+/** Miscellaneous Drupal styles **/
+  .error /* Errors that are separate from div.messages status messages (see above.) */
+  {
+    /* color: #e55; */ /* Drupal core uses a #e55 background */
+  }
+
+  .warning /* Warnings that are separate from div.messages status messages (see above.) */
+  {
+    /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+  }
+
+  .more-link /* Aggregator, blog, and forum more link */
+  {
+    text-align: right;
+  }
+
+  #user-login-form /* Drupal's default login form */
+  {
+    text-align: left;
+  }
+
+  tr.even /* Some tables have rows marked even or odd. */
+  {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  }
+
+  tr.odd
+  {
+    background-color:#f7f8f8; /* Drupal core uses a #eee background */
+  }
+
+  li a.active /* The active item in a Drupal menu */
+  {
+    color: #000;
+  }
+
+
+/** Drupal forms **/
+  .form-item, /* Wrapper for a form element (or group of form elements) and its label */
+  .form-checkboxes,
+  .form-radios
+  {
+    margin: 1em 0;
+  }
+
+  .form-item input.error, /* Highlight the form elements that caused a form submission error */
+  .form-item textarea.error,
+  .form-item select.error
+  {
+    border: 2px solid #c00;
+  }
+
+  .form-item label /* The label for a form element */
+  {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-item label.option /* The label for a radio button or checkbox */
+  {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .form-required /* The part of the label that indicates a required field */
+  {
+    color: #c00;
+  }
+
+  .form-item .description /* The descriptive help text (separate from the label) */
+  {
+    font-size: 0.9em;
+	margin:0.5em 0;
+  }
+
+  .form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+  .form-radios .form-item
+  {
+    margin: 0.4em 0;
+  }
+
+  .form-submit /* The submit button */
+  {
+  }
+
+  .container-inline div, .container-inline label /* Inline labels and form divs */
+  {
+    display: inline;
+  }
+
+  .tips /* Tips for Drupal's input formats */
+  {
+    margin: 0;
+    padding-left: 4em;
+    font-size: 0.9em;
+  }
+
+/** OpenID **/
+  /* The default styling for the OpenID login link seems to assume Garland's
+   * styling of list items.
+   */
+  #user-login-form ul /* OpenID creates a new ul above the login form's links. */
+  {
+    margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+  }
+
+  #user-login-form li.openid-link, /* The "Log in using OpenID" links. */
+  #user-login li.openid-link
+  {
+    margin-top: 1em;
+    margin-left: -20px; /* Un-do some of the padding on the ul list. */
+  	padding-left: 20px;
+  	background-position: left center;
+  }
+
+  #user-login-form li.user-link, /* The "Cancel OpenID login" links. */
+  #user-login li.user-link
+  {
+    margin-top: 1em;
+  	list-style-type: disc;
+  	list-style-position: outside;
+  }
+
+  #user-login li.openid-link, /* The OpenID links on the /user form. */
+  #user-login li.user-link
+  {
+    margin-left: -2em; /* Un-do all of the padding on the ul list. */
+  }
+
+/** Drupal admin tables **/
+  /* We overrode these styles in html-elements.css, but restore them for the
+   * forms on the site.
+   */
+  form tbody
+  {
+    border-top: 1px solid #ccc;
+  }
+
+  form th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  form tbody th
+  {
+    border-bottom: 1px solid #ccc;
+  }
+
+  form thead th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+/* Avi's stuff that needs to be reorganized */
+
+/* Hide the sidebar-left on search-results */
+body.page-collections-search-results #content, body.page-collections-search-results #content-inner { margin-left:0px; }
+body.page-collections-search-results #sidebar-left {display:none;}
+/* Hide the content-header on search pages */
+body.page-collections-search-results #main h1, body.page-collections-search-detail #main h1, body.page-collections-advanced-search #main h1 {display:none;}
+body.page-collections-search-results #main #content, body.page-collections-search-detail #main #content-header, body.page-collections-search-detail #main #sidebar-left, body.page-collections-advanced-search #main #sidebar-left, body.page-collections-advanced-search #main #content-header {margin-top:35px;}
+/* Page-specific styles for <front> */
+body.front #sidebar-left {margin-top:0;}
+body.front #mission {width:600px; margin:40px 0!important;}
+body.front #block-views-Feature-block_1 {margin-bottom:0;}
+
+
+/*-- MISCELLANEOUS STYLES --*/
+p.intro {background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373;}
+/* mailing list */
+input#mailinglist {border:1px solid #acc5a6;border-right:none;padding:3px 3px 2px;height:14px;width:152px;color:#737373;font-size:.9em;margin-bottom:20px;}
+input#mailinglist_btn {vertical-align:top;}
+input#simplesearch {border:1px solid #acc5a6;border-right:none;padding:6px 3px;height:14px;width:142px;color:#737373;font-size:.9em;margin-bottom:20px;float:left;}
+input#simplesearch_btn {vertical-align:top; background: #Acc5A6 none repeat scroll 0 0; padding:2px 2px 2px 0;float:left;}
+
+.block-subject-browse-the-catalog, .block-subject-browse-the-events-archive { border-bottom:none!important; }
+.block-subject-browse-the-catalog p.alpha, .block-subject-browse-the-events-archive p.alpha {
+	font-family:"Courier New", Courier, monospace;
+	border:1px solid #DCE7DA;
+	overflow:auto;
+	font-size:15px;
+	padding:2px;
+	margin:-2px!important;
+}
+.block-subject-browse-the-catalog p.alpha a {float:left; padding-left:0.4em;}
+.block-subject-browse-the-events-archive p.alpha a {float:left; padding-left:0.2em;}
+.block-subject-browse-the-catalog p.alpha a:hover, .block-subject-browse-the-events-archive p.alpha a:hover {text-decoration:none!important; font-weight:bold; }
+.block-subject-browse-the-catalog p.select, .block-subject-browse-the-events-archive p.select { margin-bottom:3px!important; }
+.block-subject-browse-the-catalog p.select a.on, .block-subject-browse-the-events-archive p.select a.on {border:1px solid #DCE7DA; border-bottom-color:white; background:white; padding:4px;}
+
+dl.intro {background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;padding:15px 20px;margin-top:5px!important;color:#737373;}
+dl.intro dt {float:left; font-size:2em;}
+dl.intro dd {margin-left:180px;}
+dl.intro h3, dl.intro h4 {margin-bottom:0 !important;}
+dl.intro dt.compilation { width:170px; font-size:1em; }
+
+/*dl.details dt {	float:left; text-align:right; padding-top:0.2em; font-weight:bold; font-size:1em; width:100px; margin-right:10px;}
+dl.details dd {margin-left:120px; width:300px; display:block; margin-bottom:0;}
+*/
+dl.details
+{
+width: 640px;
+margin: 2em 0;
+padding: 0;
+/*font-family: georgia, times, serif;*/
+}
+
+.details dd
+{
+width: 180px;
+/*float: right;
+*/margin: 0 0 0 0;
+padding: 6px;
+/*border-top: 1px solid #BFD6DA;*/
+text-align: right;
+text-transform:uppercase;
+color:#737373;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+.details dt { clear: both; }
+/* end hack */
+
+.details dt
+{
+float: right;
+width: 436px;
+margin: 0 0 0 0;
+padding: 6px;
+/*border-top: 1px solid #BFD6DA;
+*/}
+
+dl.status { background:#D1F2D0; overflow:auto; }
+.red {color:red;}
+
+table#searchresults { width:880px; overflow:auto;}
+#searchresults caption {text-align:left; text-transform:none !important; height:2.5em;}
+#searchresults thead { background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;color:#737373; line-height:1.2em;text-transform:uppercase;}
+#searchresults thead th {background-color:#f7f8f8;border-top:1px solid #e2e2e3;border-bottom:1px solid #e2e2e3;color:#737373;} /* IE7 Fix */
+#searchresults p { margin:0px; }
+#searchresults th {text-align:left; padding:5px; font-weight:normal;}
+#searchresults th#call {width:75px;}
+#searchresults th#title {width:auto;}
+#searchresults th#director {width:155px;}
+#searchresults th#year {width:70px;}
+#searchresults th#format {width:110px;}
+#searchresults th#loanterms {width:90px;}
+#searchresults th#loanstatus {width:45px;}
+#searchresults th#loanstatus a:hover { padding: 0 0 15px 0; background-position:right 15px !important; } 
+#searchresults thead {line-height:1.2em; }
+#searchresults tr.odd td { background-color:#f7f8f8; }
+#searchresults td { padding:5px; }
+#searchresults th a:hover, th a.sorted { padding-right:20px; background:scroll url(http://collegeit.uchicago.edu/fsc/i/global/sorted.png) right 0px no-repeat; } 
+
+#searchagain fieldset, .block-subject-search-the-catalog fieldset, .block-subject-search-the-events-archive fieldset {margin:0;padding:0;border:none;}
+#searchagain p {float: right; text-transform: none; font-size: 12px; width: 70px; line-height: 1.2em; letter-spacing:0;}
+#searchagain {float: right; width: 270px; margin-top:-1em;}
+#searchagain input#simplesearch {margin-bottom:5px; font-size:11px;float:left;}
+#searchagain input#simplesearch_btn {float:left;}
+#searchresults caption > p {float:left; letter-spacing:0; line-height:1.2em;}
+
+div#searchpager {clear: left; display: block; float: left; letter-spacing:0; color:#cccccc;}
+form#pageDnForm, form#pageUpForm, form#pageDnForm2, form#pageUpForm2 { display:inline;}
+
+dd:after {
+    visibility: hidden;
+    clear: right;
+    font-size:0;
+    height:0;
+    display: block;
+    content:".";
+ }
+ 
+ /* Hide from IE5-Mac \*/
+* html .wrapper, * html dl.details, * html dd {height:1%;}
+dd {display: block;}
+/* End hiding from IE5-Mac */
+
+
+/* Fix IMCE */
+#imce-content ul.secondary{
+background-color: transparent;
+background-image: none;
+}
+
+#imce-content ul.secondary li{
+float: none;
+}
+
+#imce-content ul.secondary a{
+display: inline;
+}
+
+/* Squeeze FCK window for intro */
+#edit-field-intro-0-value___Frame {height:150px!important;}
+
+.emvideo-thumbnail-replacement span {background-image:url(i/global/emvideo-play.png); margin:19px 0 0 47px;}
+
+/*--------------------------*/
+
+/* 
+	The following information must not be removed:
+	Awesome Form v2.1 CSS
+	Written by: Paul Armstrong, Paul Armstrong Designs
+	Site: http://paularmstrongdesigns.com
+	Example & Documentation: http://paularmstrongdesigns.com/awesome/form/index.html
+	Sun Dec 17 21:25:39 2006
+
+	Special thanks to Zach Johnson for helping and pushing me to make the changes.
+	Site: http://tech.no.logi.es (those aren't dots, they are diamonds)
+
+	This work is licensed under a Creative Commons Attribution-ShareAlike 2.5 License
+	http://creativecommons.org/licenses/by-sa/2.5/
+*/
+
+
+/*
+	In the following section, many of the values must be changed in reference to another.
+	Items labeled as 'subjective' are not dependent and may be easily changed as you see fit.
+*/
+
+.awesomeform legend, table#searchresults caption {
+color:#474740;
+font-size:1.2em;
+letter-spacing:2px;
+margin-bottom:6px;
+text-transform:uppercase;
+font-weight:normal;
+}
+
+.awesomeform fieldset {
+margin-bottom: 18px;
+padding: 0 10px 8px;
+border-color:#DFDED6;
+border-style:solid;
+border-width:1px;
+}
+
+.awesomeform fieldset fieldset {
+margin: 16px 10px;
+padding: 0 !important;
+ border: none !important;
+}
+
+.awesomeform fieldset fieldset legend {
+color:#474740;
+font-size:10px;
+letter-spacing:0;
+text-transform: none;
+font-weight: bold;
+margin-left: 4px;
+padding: 0 2px;
+margin-bottom: 6px;
+}
+.awesomeform #simple {border:1px solid #acc5a6;border-right:none;padding:3px 3px 2px;height:14px;width:152px;color:#737373;font-size:.9em;margin-bottom:20px;}
+.awesomeform #simple_btn {vertical-align:top; width:29px; border:0; margin:-41px 0 0 365px; background:#acc5a6;}
+
+.awesomeform label { 
+	width: 200px; /* label width *//* label margin = (input left margin) - (label width) */
+	margin-right: 10px; /* label margin */
+}
+.awesomeform label.long, .awesomeform p.label {
+	margin-left: 120px; /* subjective */
+	width: 390px; /* (textarea width) + (label width) + (label margin) - (left margin) */
+}
+.awesomeform label span {
+	color: #900; /* color of required asterisk */
+}
+.awesomeform input, .awesomeform textarea, .awesomeform select,
+.awesomeform .checks input, .awesomeform.checks input {
+	margin-left: 210px; /* (label width) + (label margin) */
+	width: 200px; /* subjective, only applies to non-checkbox or radio inputs */
+}
+.awesomeform textarea { 
+	width: 300px; /* subjective, recommend: (3/2)(input width) */
+}
+.awesomeform p.desc {
+	margin: 0 0 10px 210px !important; /* (label width) + (label margin) **recommended */
+}
+.awesomeform .checks label, .awesomeform.checks label {
+	margin-left: 220px; /* (label width) + 2(label margin) */
+}
+
+/*
+	The following makes Internet Explorer 6.x play nicely. 
+	These fix the double float margin bug.
+*/
+* html .awesomeform .checks input, * html .awesomeform.checks input { 
+	margin-left: 105px;  /* (1/2)((label width) + (label margin)) */
+}
+* html .awesomeform .checks label, * html .awesomeform.checks label { 
+	margin-left: 210px; /* (label width) + (label margin) */
+	height: 1em; 
+}
+
+
+/*********************************************************************************
+	DO NOT EDIT BELOW THIS LINE
+*********************************************************************************/
+
+
+.awesomeform {
+	margin: 0 0 1em;
+}
+
+.awesomeform label {
+	/* 
+		A label must precede the form element in the HTML
+		You must keep the top padding for some browsers to keep the label and the form element looking on the same line
+	*/
+	float: left;
+	text-align: right;
+	padding-top: 0.2em;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.awesomeform label:after { 
+	/* 
+		Creates a ":" after LABELs. This only works in some browsers 
+	*/
+	content: ":"; 
+}
+
+.awesomeform label.long {
+	/*
+		If your label text does not fit in the left-hand side, consider this class
+	*/
+	float: none;
+	display: block;
+	text-align: left;
+}
+
+.awesomeform label.long:after {
+	content: "";
+}
+
+.awesomeform input, .awesomeform textarea, .awesomeform select {
+	/*
+		These items must immediately follow the LABEL item associated with it and followed by a BR (see below).
+		The following width must be 10pixels wider than the width of the LABEL.
+	*/
+	display: block;
+	margin-bottom: 0;
+}
+.awesomeform select[multiple="multiple"] {
+	/*
+		Mozilla has some weird concept of how to display multiple select boxes.
+		For some reason, display: block; does not affect it.
+		For more information, see https://bugzilla.mozilla.org/show_bug.cgi?id=342531
+		This fixes that problem. DON'T FORGET YOUR BR TAG AFTER SELECT!
+	*/
+	margin-left: 0px;
+}
+.awesomeform br { 
+	/* 
+		Always include a BR tag at the end of a line of items -- generally immediately following one of an INPUT, SELECT or TEXTAREA.
+		Within div.checks, include the BR after the LABEL
+	*/
+	clear: left;
+} 
+
+.awesomeform input[type="radio"], .awesomeform input[type="checkbox"], 
+.awesomeform input[type="hidden"] { 
+	/* 
+		Keeps Mozilla browsers (and others) from making the RADIO and CHECKBOXES too wide and/or tall.
+		Also removes unnecessary borders from these browsers (They don't respond as expected) 
+	*/
+	width: auto; 
+	height: 0.8em; 
+	border: 0;
+}
+
+.awesomeform input[type="hidden"] {
+	/*
+		Firefox doesn't want to make them actually hidden, so I'll force it.
+	*/
+	display: none;
+}
+
+.awesomeform p.desc {
+	/*
+		Use this immediately following an item that needs a longer description than can be handled by the LABEL.
+		The left margin should be the same as INPUT, TEXTAREA and SELECT objects.
+	*/
+	display: block;
+	position: relative;
+	/*top: -1em;*/
+	margin-bottom: 0em;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+
+/* 
+	The following section is for reversing the display of CHECKBOX and RADIO INPUTs.
+	Surround the section of items with <fieldset class="checks"></fieldset> or <div class="checks"></div>.
+	It is highly recommended to use FIELDSET over DIV when there are multiple items.
+	In the section, the INPUT precedes the LABEL and the BR comes last (after the label).
+*/
+.awesomeform .checks label, .awesomeform.checks label {
+	/*
+		Overrides for previously defined stuff and changes.
+		Left margin must be 10pixels more than ".awesomeform input, .awesomeform select" etc.
+	*/
+	float: none;
+	width: auto;
+	clear: none;
+	display: block;
+	text-align: left;
+	height: 1.4em;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+.awesomeform .checks label:after, .awesomeform.checks label:after, .checks label:after  { 
+	/* 
+		Makes the ":" not generated after the LABEL. 
+	*/
+	content: ""; 
+} 
+
+.awesomeform .checks input, .awesomeform.checks input {
+	/*
+		Left margin is the same value as ".awesomeform input, .awesomeform select" etc.
+	*/
+	float: left;
+	text-align: right;
+	width: auto;
+}
+
+/* 
+	End reverse checks/radios section
+*/
+
+
+/*
+	I found my own IE CSS display bug. I call it the "IE sucks, so it redraws the top border all over the fieldset like a jerk bug."
+
+.awesomeform input, .awesomeform textarea, .awesomeform select,
+.awesomeform .checks input, .awesomeform .checks label,
+.awesomeform.checks input, .awesomeform.checks label {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+*/
+* html .awesomeform br {
+	/*
+		Hooray! We have a fix!
+		For some crazy reason, IE lets me style its BR tag.
+	*/
+	line-height: 1em;
+	font-size: 0.5em;
+}
